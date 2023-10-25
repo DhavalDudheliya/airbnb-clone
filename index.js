@@ -31,7 +31,7 @@ app.use(
   cors({
     credentials: true,
     // origin: "http://localhost:5173",
-    origin: "https://airbnbclone-clone.onrender.com",
+    origin: "https://airbnbclone-clone.onrender.com/",
   })
 );
 
