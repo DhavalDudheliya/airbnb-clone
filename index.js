@@ -16,6 +16,7 @@ const { log } = require("console");
 const { resolve } = require("path");
 const { rejects } = require("assert");
 require("dotenv").config();
+const PORT = process.env.PORT || 4000;
 
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = "jaiSwaminarayan";
@@ -35,8 +36,7 @@ app.use(
 // 5hvN9F7ic5jDxX3P
 
 mongoose.connect(process.env.MONGO_URL);
-app.listen(4000);
-
+app.listen(PORT);
 
 function getUserDataFromReq(req) {
   return new Promise((resolve, reject) => {
@@ -241,4 +241,3 @@ app.get("/bookings", async (req, res) => {
   const userData = await getUserDataFromReq(req);
   res.json(await Booking.find({ user: userData.id }).populate("place"));
 });
-
