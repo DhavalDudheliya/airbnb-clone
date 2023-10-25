@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "node api/index.js",
-    "server": "nodemon api/index.js",
+    "start": "node index.js",
+    "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
