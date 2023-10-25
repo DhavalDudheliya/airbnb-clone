@@ -37,9 +37,6 @@ app.use(
   })
 );
 
-app.options('*', cors());
-
-
 // 5hvN9F7ic5jDxX3P
 
 mongoose.connect(process.env.MONGO_URL);
