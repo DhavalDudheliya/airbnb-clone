@@ -31,7 +31,7 @@ app.use(
   cors({
     credentials: true,
     // origin: "http://localhost:5173",
-    origin: "https://venerable-bombolone-64d854.netlify.app/",
+    origin: "https://venerable-bombolone-64d854.netlify.app",
   })
 );
 
