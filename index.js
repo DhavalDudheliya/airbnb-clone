@@ -216,7 +216,7 @@ app.put(`${BASE_URL}/places`, async (req, res) => {
   });
 });
 
-app.get(`${BASE_URL}/places`, async (req, res) => {
+app.get(`/places`, async (req, res) => {
   res.json(await Place.find());
 });
 
